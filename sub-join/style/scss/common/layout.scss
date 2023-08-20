@@ -1,0 +1,148 @@
+@import "./mixin.scss";
+
+//폰트
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../font/NotoSansKR-Regular.woff2') format('woff2');
+	/* Super Modern Browsers */
+	font-weight: 400
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../font/NotoSansKR-Medium.woff2') format('woff2');
+	/* Super Modern Browsers */
+	font-weight: 500
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	src: url('../font/NotoSansKR-Bold.woff2') format('woff2');
+	/* Super Modern Browsers */
+	font-weight: 700
+}
+
+
+// 레이아웃 스타일
+body {
+	font-family: 'NotoSansKR';
+	@include vw(letter-spacing, -2px);
+}
+
+header {
+	width: 100%;
+
+	.logo-wrap {
+		@include vw(height, 100px);
+		@include vw(padding, 60px 0);
+		box-sizing: border-box;
+		overflow: hidden;
+
+		h1 {
+			float: left;
+
+			a {
+				display: flex;
+				align-items: center;
+
+				img {
+					float: left;
+					@include vw(width, 42.5px);
+					@include vw(margin-right, 22px);
+				}
+
+				strong {
+					float: left;
+					font-weight: 900;
+					@include vw(font-size, 24px);
+				}
+			}
+		}
+
+		.cs_center {
+			float: right;
+
+			img {
+				@include vw(width, 42.5px);
+			}
+		}
+	}
+
+	.nav {
+		@include vw(height, 78px);
+		box-sizing: border-box;
+		@include vw(padding, 17px);
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include vw(margin-bottom, 8px);
+	
+
+		a {
+			display: inline-block;
+			@include vw(padding, 10px 0);
+			box-sizing: border-box;
+			text-align: center;
+			@include vw(font-size, 21.3px);
+		}
+	}
+
+
+}
+
+footer {
+	.wrap-full {
+		border-bottom: 2px solid #e1e1e1;
+		border-top: 2px solid #e1e1e1;
+		background-color: #f2f2f2;
+		@include vw(border-width, 2px);
+		.icon-list {
+			max-width: 720px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			@include vw(padding, 25px 0);
+			li {
+				width: 25%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.wrap{
+		@include vw(padding, 50px 35px);
+		@include vw(font-size, 25.33px);
+		color: #666666;
+		@include vw(letter-spacing, -1px);
+		line-height: 1.3;
+		span{
+			@include vw(margin-right,2px);
+		}
+		strong{
+			font-weight: 900;
+		}
+	}
+	.botton-banner{
+		@include vw(height, 120px);
+		background-color: #4793a3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			@include vw(width, 64px);
+			@include vw(height, 61px);
+		}
+		span{
+			@include vw(margin-left, 15px);
+			@include vw(font-size, 53.34px);
+			font-weight: 900;
+			color:#fff;
+			strong{
+				color:#fdf47f;
+			}
+		}
+	}
+}

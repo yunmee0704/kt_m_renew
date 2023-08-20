@@ -657,6 +657,7 @@ footer .botton-banner span strong {
 }
 .sector-tab .tab-conts .product .bottom-area {
   padding-top: 2.3611111111vw;
+  display: flex;
 }
 @media screen and (min-width: 720px) {
   .sector-tab .tab-conts .product .bottom-area {
@@ -693,13 +694,8 @@ footer .botton-banner span strong {
 }
 .sector-tab .tab-conts .product .bottom-area button.cal {
   width: 35%;
-  margin-right: 2.0833333333vw;
+  margin-right: 4%;
   background-color: #ededed;
-}
-@media screen and (min-width: 720px) {
-  .sector-tab .tab-conts .product .bottom-area button.cal {
-    margin-right: 15px;
-  }
 }
 .sector-tab .tab-conts .product .bottom-area button.apply {
   width: 61%;
