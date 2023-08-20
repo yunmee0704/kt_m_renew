@@ -203,6 +203,7 @@
 
 			.bottom-area {
 				@include vw(padding-top, 17px);
+				display:flex;
 				button {
 					@include vw(font-size, 32px);
 					@include vw(letter-spacing, -2px);
@@ -213,7 +214,7 @@
 
 					&.cal {
 						width: 35%;
-						@include vw(margin-right, 15px);
+						margin-right: 4%;
 						background-color: #ededed;
 					}
 
