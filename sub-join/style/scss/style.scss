@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	&.no-padding{
 		padding: 0;
+        width: 100;
 	}
 }
 *{
@@ -19,8 +20,9 @@
 }
 
 .sector-visual {
-    background-color: #f1f5f8;
+    background-color: #f1f5f8;    
     .top{
+        width: 100%;
         border-top: 2px solid #e1e1e1;
         border-bottom: 2px solid #e1e1e1;
         @include vw(height, 117px);
