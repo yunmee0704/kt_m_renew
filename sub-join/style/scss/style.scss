@@ -3,115 +3,229 @@
 @import './common/layout.scss';
 
 .wrap {
-	max-width: 720px;
-	position: relative;
-	margin: 0 auto;
-	@include vw(padding, 0 44px);
-	box-sizing: border-box;
-	&.no-padding{
-		padding: 0;
+    max-width: 720px;
+    position: relative;
+    margin: 0 auto;
+    @include vw(padding, 0 44px);
+    box-sizing: border-box;
+
+    &.no-padding {
+        padding: 0;
         width: 100;
-	}
+    }
 }
-*{
-	p,span{
-		@include vw(letter-spacing, -2px);
-	}
+
+* {
+    @include vw(font-size, 30.67px);
+
+    p,
+    span {
+        @include vw(letter-spacing, -2px);
+    }
+}
+
+.title {
+    font-weight: 900;
 }
 
 .sector-visual {
-    background-color: #f1f5f8;    
-    .top{
+    background-color: #f1f5f8;
+
+    .top {
         width: 100%;
         border-top: 2px solid #e1e1e1;
         border-bottom: 2px solid #e1e1e1;
         @include vw(height, 117px);
         @include vw(padding, 40px 44px);
         box-sizing: border-box;
-        a{
+
+        a {
             @include vw(margin-right, -35px);
             float: left;
-            img{
-                @include vw(width,52px);
+
+            img {
+                @include vw(width, 52px);
             }
         }
-        strong{
+
+        strong {
             display: block;
-            @include vw(font-size, 30.67px);
+
             font-weight: 900;
             text-align: center;
 
         }
     }
-    .bottom{
+
+    .bottom {
         text-align: center;
         @include vw(padding, 55px 0);
-        img{
+
+        img {
             @include vw(width, 175px);
         }
-        p{
-            @include vw(font-size,40px);
+
+        p {
+            @include vw(font-size, 40px);
             line-height: 1.5;
             font-weight: 900;
         }
     }
 }
-.sector-info{
+
+.sector-info {
     @include vw(padding, 70px 0);
-    @include vw(font-size, 30.67px);
-    .title{
-        font-weight: 900;
+
+    em {
+        color: #d63a33;
     }
-    em{
-        color:#d63a33;
-    }
-    input{
+
+    input {
         @include vw(width, 600px);
-        border:none;
+        border: none;
         border-bottom: 2px solid #e1e1e1;
         @include vw(padding, 25px 15px);
-        @include vw(font-size, 30.67px);
         @include vw(margin, 35px 0);
 
     }
-    span{text-align: right;display: block;}
-    .product-info{
-        form{
+
+    span {
+        text-align: right;
+        display: block;
+    }
+
+    .product-info {
+        form {
             @include vw(margin, 40px 0);
-            select{
-                @include vw(padding,25px);
+
+            select {
+                @include vw(padding, 25px);
                 @include vw(font-size, 25.67px);
                 display: block;
                 width: 100%;
                 @include vw(height, 105px);
                 box-sizing: border-box;
-                @include vw(border-radius,20px);
+                @include vw(border-radius, 20px);
                 border: 2px solid #e1e1e1;
                 @include vw(margin-bottom, 25px);
-             
+
             }
         }
     }
-    .address{
-      .address-search{
+
+    .address {
+        .address-search {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            input {
+                @include vw(width, 445px);
+                @include vw(margin-right, 35px);
+            }
+
+            button {
+                display: inline-block;
+                @include vw(font-size, 30px);
+                @include vw(height, 75px);
+                @include vw(width, 190px);
+                @include vw(padding, 20px 0);
+                @include vw(border-radius, 10px);
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.sector-agree {
+    @include vw(padding-bottom, 115px);
+
+    .wrap {
+        div {
+            background-color: #f8f8f8;
+            @include vw(border-radius, 20px);
+            
+            @include vw(margin-bottom, 26px);
+
+            .title {
+                margin-top: 0;
+                @include vw(margin-bottom, 21px);
+            }
+
+            p{
+                color: #808080;
+                @include vw(margin-top, 21px);
+
+                em {
+                    color: #4793a3;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .essential {
+        @include vw(padding, 30px 40px);
+        .title {
+      
+            @include vw(vertical-align, 12px);
+            @include vw(margin-left, 10px);
+        }
+
+        [type="radio"] {
+            appearance: none;
+            @include vw(width, 53px);
+            @include vw(height, 53px);
+            background-image: url(/img/check_off.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: transparent;
+
+            &:checked {
+                background-image: url(/img/check_on.png);
+            }
+        }
+    }
+
+    .guide {
+        .title{
+            display: block;
+            @include vw(padding, 40px 40px 25px);
+            border-bottom: 2px solid #e1e1e1;
+        }
+        ul {
+            @include vw(padding, 20px 45px 40px);
+            li {
+                color: #808080;
+                @include vw(margin-bottom, 55px);
+                line-height: 1.5;
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    @include vw(width, 7px);
+                    @include vw(height, 7px);
+                    background-color: #808080;
+                    border-radius: 50%;
+                    @include vw(vertical-align, 12px);
+                    @include vw(margin-right, 14px);
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+     
+    }
+    button{
+        @include vw(margin-top, 30px);
+        @include vw(padding, 30px 0);
+        display: block;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:space-around;
-        
-        input{
-            @include vw(width, 445px);
-            @include vw(margin-right,35px);
-        }
-        button{
-            display: inline-block;
-            @include vw(font-size, 30px);
-            @include vw(height, 75px);
-            @include vw(width, 190px);
-            @include vw(padding, 20px 0);
-            @include vw(border-radius, 10px);
-            font-weight: 900;
-        }
-      }
+        text-align: center;
+        font-weight: 900;
+        background-color: #5ddfdf;
+        @include vw(border-radius, 20px);
     }
 }
