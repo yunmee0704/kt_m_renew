@@ -70,19 +70,19 @@ button {
 
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR-Regular.woff2") format("woff2");
+  src: url("/kt_renewal/font/NotoSansKR-Regular.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 400;
 }
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR-Medium.woff2") format("woff2");
+  src: url("/kt_renewal/font/NotoSansKR-Medium.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 500;
 }
 @font-face {
   font-family: "NotoSansKR";
-  src: url("../font/NotoSansKR-Bold.woff2") format("woff2");
+  src: url("/kt_renewal/font/NotoSansKR-Bold.woff2") format("woff2");
   /* Super Modern Browsers */
   font-weight: 700;
 }
@@ -308,4 +308,256 @@ footer .botton-banner span {
 }
 footer .botton-banner span strong {
   color: #fdf47f;
+}
+
+.wrap {
+  max-width: 720px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 6.1111111111vw;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 720px) {
+  .wrap {
+    padding: 0 44px;
+  }
+}
+.wrap.no-padding {
+  padding: 0;
+}
+
+* p, * span {
+  letter-spacing: -0.2777777778vw;
+}
+@media screen and (min-width: 720px) {
+  * p, * span {
+    letter-spacing: -2px;
+  }
+}
+
+.sector-visual {
+  background-color: #f1f5f8;
+}
+.sector-visual .top {
+  border-top: 2px solid #e1e1e1;
+  border-bottom: 2px solid #e1e1e1;
+  height: 16.25vw;
+  padding: 5.5555555556vw 6.1111111111vw;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .top {
+    height: 117px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .top {
+    padding: 40px 44px;
+  }
+}
+.sector-visual .top a {
+  margin-right: -4.8611111111vw;
+  float: left;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .top a {
+    margin-right: -35px;
+  }
+}
+.sector-visual .top a img {
+  width: 7.2222222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .top a img {
+    width: 52px;
+  }
+}
+.sector-visual .top strong {
+  display: block;
+  font-size: 4.2597222222vw;
+  font-weight: 900;
+  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .top strong {
+    font-size: 30.67px;
+  }
+}
+.sector-visual .bottom {
+  text-align: center;
+  padding: 7.6388888889vw 0;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .bottom {
+    padding: 55px 0;
+  }
+}
+.sector-visual .bottom img {
+  width: 24.3055555556vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .bottom img {
+    width: 175px;
+  }
+}
+.sector-visual .bottom p {
+  font-size: 5.5555555556vw;
+  line-height: 1.5;
+  font-weight: 900;
+}
+@media screen and (min-width: 720px) {
+  .sector-visual .bottom p {
+    font-size: 40px;
+  }
+}
+
+.sector-info {
+  padding: 9.7222222222vw 0;
+  font-size: 4.2597222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-info {
+    padding: 70px 0;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info {
+    font-size: 30.67px;
+  }
+}
+.sector-info .title {
+  font-weight: 900;
+}
+.sector-info em {
+  color: #d63a33;
+}
+.sector-info input {
+  width: 83.3333333333vw;
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+  padding: 3.4722222222vw 2.0833333333vw;
+  font-size: 4.2597222222vw;
+  margin: 4.8611111111vw 0;
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    padding: 25px 15px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    font-size: 30.67px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    margin: 35px 0;
+  }
+}
+.sector-info span {
+  text-align: right;
+  display: block;
+}
+.sector-info .product-info form {
+  margin: 5.5555555556vw 0;
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form {
+    margin: 40px 0;
+  }
+}
+.sector-info .product-info form select {
+  padding: 3.4722222222vw;
+  font-size: 3.5652777778vw;
+  display: block;
+  width: 100%;
+  height: 14.5833333333vw;
+  box-sizing: border-box;
+  border-radius: 2.7777777778vw;
+  border: 2px solid #e1e1e1;
+  margin-bottom: 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form select {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form select {
+    font-size: 25.67px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form select {
+    height: 105px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form select {
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info form select {
+    margin-bottom: 25px;
+  }
+}
+.sector-info .address .address-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sector-info .address .address-search input {
+  width: 61.8055555556vw;
+  margin-right: 4.8611111111vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search input {
+    width: 445px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search input {
+    margin-right: 35px;
+  }
+}
+.sector-info .address .address-search button {
+  display: inline-block;
+  font-size: 4.1666666667vw;
+  height: 10.4166666667vw;
+  width: 26.3888888889vw;
+  padding: 2.7777777778vw 0;
+  border-radius: 1.3888888889vw;
+  font-weight: 900;
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search button {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search button {
+    height: 75px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search button {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search button {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info .address .address-search button {
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

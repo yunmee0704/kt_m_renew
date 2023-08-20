@@ -1,3 +1,115 @@
 @import './common/reset.scss';
 @import './common/mixin.scss';
 @import './common/layout.scss';
+
+.wrap {
+	max-width: 720px;
+	position: relative;
+	margin: 0 auto;
+	@include vw(padding, 0 44px);
+	box-sizing: border-box;
+	&.no-padding{
+		padding: 0;
+	}
+}
+*{
+	p,span{
+		@include vw(letter-spacing, -2px);
+	}
+}
+
+.sector-visual {
+    background-color: #f1f5f8;
+    .top{
+        border-top: 2px solid #e1e1e1;
+        border-bottom: 2px solid #e1e1e1;
+        @include vw(height, 117px);
+        @include vw(padding, 40px 44px);
+        box-sizing: border-box;
+        a{
+            @include vw(margin-right, -35px);
+            float: left;
+            img{
+                @include vw(width,52px);
+            }
+        }
+        strong{
+            display: block;
+            @include vw(font-size, 30.67px);
+            font-weight: 900;
+            text-align: center;
+
+        }
+    }
+    .bottom{
+        text-align: center;
+        @include vw(padding, 55px 0);
+        img{
+            @include vw(width, 175px);
+        }
+        p{
+            @include vw(font-size,40px);
+            line-height: 1.5;
+            font-weight: 900;
+        }
+    }
+}
+.sector-info{
+    @include vw(padding, 70px 0);
+    @include vw(font-size, 30.67px);
+    .title{
+        font-weight: 900;
+    }
+    em{
+        color:#d63a33;
+    }
+    input{
+        @include vw(width, 600px);
+        border:none;
+        border-bottom: 2px solid #e1e1e1;
+        @include vw(padding, 25px 15px);
+        @include vw(font-size, 30.67px);
+        @include vw(margin, 35px 0);
+
+    }
+    span{text-align: right;display: block;}
+    .product-info{
+        form{
+            @include vw(margin, 40px 0);
+            select{
+                @include vw(padding,25px);
+                @include vw(font-size, 25.67px);
+                display: block;
+                width: 100%;
+                @include vw(height, 105px);
+                box-sizing: border-box;
+                @include vw(border-radius,20px);
+                border: 2px solid #e1e1e1;
+                @include vw(margin-bottom, 25px);
+             
+            }
+        }
+    }
+    .address{
+      .address-search{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        
+        input{
+            @include vw(width, 445px);
+            @include vw(margin-right,35px);
+        }
+        button{
+            display: inline-block;
+            @include vw(font-size, 30px);
+            @include vw(height, 75px);
+            @include vw(width, 190px);
+            @include vw(padding, 20px 0);
+            @include vw(border-radius, 10px);
+            font-weight: 900;
+        }
+      }
+    }
+}
