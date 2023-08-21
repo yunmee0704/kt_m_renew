@@ -458,6 +458,14 @@ footer .botton-banner span strong {
   text-align: right;
   display: block;
 }
+.sector-info .product-info {
+  margin-top: 2.7777777778vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-info .product-info {
+    margin-top: 20px;
+  }
+}
 .sector-info .product-info form {
   margin: 5.5555555556vw 0;
 }
@@ -467,6 +475,7 @@ footer .botton-banner span strong {
   }
 }
 .sector-info .product-info form select {
+  background: url("/img/gray_arrow.png") no-repeat 97% 50%/15px auto;
   padding: 3.4722222222vw;
   font-size: 3.5652777778vw;
   display: block;
@@ -476,6 +485,9 @@ footer .botton-banner span strong {
   border-radius: 2.7777777778vw;
   border: 2px solid #e1e1e1;
   margin-bottom: 3.4722222222vw;
+  -webkit-appearance: none; /* for chrome */
+  -moz-appearance: none; /*for firefox*/
+  appearance: none;
 }
 @media screen and (min-width: 720px) {
   .sector-info .product-info form select {
@@ -501,6 +513,10 @@ footer .botton-banner span strong {
   .sector-info .product-info form select {
     margin-bottom: 25px;
   }
+}
+.sector-info .product-info form select::-ms-expand {
+  display: none;
+  /*for IE10,11*/
 }
 .sector-info .address .address-search {
   width: 100%;
