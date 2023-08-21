@@ -2,6 +2,7 @@
 @import './common/mixin.scss';
 @import './common/layout.scss';
 
+// common
 .wrap {
     max-width: 720px;
     position: relative;
@@ -11,7 +12,7 @@
 
     &.no-padding {
         padding: 0;
-        width: 100;
+        
     }
 }
 
@@ -73,6 +74,46 @@
     }
 }
 
+form {
+    @include vw(margin, 40px 0);
+
+    select {
+        background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
+        @include vw(padding, 25px);
+        @include vw(font-size, 25.67px);
+        display: block;
+        width: 100%;
+        @include vw(height, 105px);
+        box-sizing: border-box;
+        @include vw(border-radius, 20px);
+        border: 2px solid #e1e1e1;
+        @include vw(margin-bottom, 25px);
+        -webkit-appearance: none;
+        /* for chrome */
+        -moz-appearance: none;
+        /*for firefox*/
+        appearance: none;
+
+        &::-ms-expand {
+            display: none;
+            /*for IE10,11*/
+        }
+
+    }
+}
+
+.apply_btn {
+    @include vw(margin-top, 30px);
+    @include vw(padding, 30px 0);
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    background-color: #5ddfdf;
+    @include vw(border-radius, 20px);
+}
+
+// 가입신청 페이지
 .sector-info {
     @include vw(padding, 70px 0);
 
@@ -80,14 +121,6 @@
         color: #d63a33;
     }
 
-    input {
-        @include vw(width, 600px);
-        border: none;
-        border-bottom: 2px solid #e1e1e1;
-        @include vw(padding, 25px 15px);
-        @include vw(margin, 35px 0);
-
-    }
 
     span {
         text-align: right;
@@ -96,11 +129,12 @@
 
     .product-info {
         @include vw(margin-top, 20px);
+
         form {
             @include vw(margin, 40px 0);
 
             select {
-                background:url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
+                background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
                 @include vw(padding, 25px);
                 @include vw(font-size, 25.67px);
                 display: block;
@@ -110,9 +144,12 @@
                 @include vw(border-radius, 20px);
                 border: 2px solid #e1e1e1;
                 @include vw(margin-bottom, 25px);
-                -webkit-appearance: none;/* for chrome */
-                -moz-appearance: none;/*for firefox*/
+                -webkit-appearance: none;
+                /* for chrome */
+                -moz-appearance: none;
+                /*for firefox*/
                 appearance: none;
+
                 &::-ms-expand {
                     display: none;
                     /*for IE10,11*/
@@ -233,14 +270,36 @@
 
     }
 
-    button {
-        @include vw(margin-top, 30px);
-        @include vw(padding, 30px 0);
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-weight: 900;
-        background-color: #5ddfdf;
-        @include vw(border-radius, 20px);
+
+}
+
+//요금계산기 페이지
+.sector-select {
+    @include vw(padding-top, 70px);
+    ul {
+        @include vw(padding, 30px 0 65px);
+        li {
+            height: 76px;
+            box-sizing: border-box;
+            text-align: center;
+            display: inline-block;
+            width: 23%;
+            margin-right: 1%;
+            @include vw(font-size,28px);
+            @include vw(padding, 25px 0);
+            background-color: #f2f2f2;
+            color: #000;
+            font-weight: 900;
+            @include vw(border-radius, 10px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.on {
+                background-color: #000;
+                color: #fff;
+            }
+        }
     }
 }
