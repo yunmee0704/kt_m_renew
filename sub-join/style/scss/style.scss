@@ -4,80 +4,246 @@
 
 // common
 .wrap {
-    max-width: 720px;
-    position: relative;
-    margin: 0 auto;
-    @include vw(padding, 0 44px);
-    box-sizing: border-box;
+  max-width: 720px;
+  position: relative;
+  margin: 0 auto;
+  @include vw(padding, 0 44px);
+  box-sizing: border-box;
 
-    &.no-padding {
-        padding: 0;
-        
-    }
+  &.no-padding {
+    padding: 0;
+
+  }
 }
 
 * {
-    @include vw(font-size, 30.67px);
+  @include vw(font-size, 30.67px);
 
-    p,
-    span {
-        @include vw(letter-spacing, -2px);
-    }
+  p,
+  span {
+    @include vw(letter-spacing, -2px);
+  }
 }
 
 .title {
-    font-weight: 900;
+  font-weight: 900;
 }
 
+// 비주얼부분
 .sector-visual {
-    background-color: #f1f5f8;
+  background-color: #f1f5f8;
 
-    .top {
-        width: 100%;
-        border-top: 2px solid #e1e1e1;
-        border-bottom: 2px solid #e1e1e1;
-        @include vw(height, 117px);
-        @include vw(padding, 40px 44px);
-        box-sizing: border-box;
+  .top {
+    width: 100%;
+    border-top: 2px solid #e1e1e1;
+    border-bottom: 2px solid #e1e1e1;
+    @include vw(height, 117px);
+    @include vw(padding, 40px 44px);
+    box-sizing: border-box;
 
-        a {
-            @include vw(margin-right, -35px);
-            float: left;
+    a {
+      @include vw(margin-right, -35px);
+      float: left;
 
-            img {
-                @include vw(width, 52px);
-            }
-        }
-
-        strong {
-            display: block;
-
-            font-weight: 900;
-            text-align: center;
-
-        }
+      img {
+        @include vw(width, 52px);
+      }
     }
 
-    .bottom {
-        text-align: center;
-        @include vw(padding, 55px 0);
+    strong {
+      display: block;
 
-        img {
-            @include vw(width, 175px);
-        }
+      font-weight: 900;
+      text-align: center;
 
-        p {
-            @include vw(font-size, 40px);
-            line-height: 1.5;
-            font-weight: 900;
-        }
     }
+  }
+
+  .bottom {
+    text-align: center;
+    @include vw(padding, 55px 0);
+
+    img {
+      @include vw(width, 175px);
+    }
+
+    p {
+      @include vw(font-size, 40px);
+      line-height: 1.5;
+      font-weight: 900;
+    }
+  }
 }
 
+// 드롭박스
 form {
-    @include vw(margin, 40px 0);
+  @include vw(margin, 40px 0);
 
-    select {
+  select {
+    background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
+    @include vw(padding, 25px);
+    @include vw(font-size, 25.67px);
+    display: block;
+    width: 100%;
+    @include vw(height, 105px);
+    box-sizing: border-box;
+    @include vw(border-radius, 20px);
+    border: 2px solid #e1e1e1;
+    @include vw(margin-bottom, 25px);
+    -webkit-appearance: none;
+    /* for chrome */
+    -moz-appearance: none;
+    /*for firefox*/
+    appearance: none;
+
+    &::-ms-expand {
+      display: none;
+      /*for IE10,11*/
+    }
+
+  }
+}
+
+// 빨간색폰트
+.red {
+  color: #ee2e26;
+}
+
+
+// 표
+table {
+  width: 100%;
+  @include vw(margin-bottom, 20px);
+
+  th {
+    background-color: #f8f8f8;
+  }
+
+  th,
+  td {
+    border: 1px solid #e5e5e5;
+  }
+
+  tr {
+
+    th {
+      width: 20%;
+      @include vw(padding, 25px 0);
+
+
+    }
+
+    &:first-child {
+      border-top: 3px solid #666666;
+
+      th {
+        @include vw(padding, 40px 0);
+        font-weight: 900;
+
+      }
+    }
+  }
+
+  td {
+    text-align: right;
+    color: #6d6e6f;
+    @include vw(padding, 0 5px);
+    box-sizing: border-box;
+  }
+}
+
+// 안내사항
+.guide {
+  background-color: #f8f8f8;
+  @include vw(border-radius, 20px);
+
+  @include vw(margin-bottom, 26px);
+
+  .title {
+    display: block;
+    @include vw(padding, 40px 40px 25px);
+    border-bottom: 2px solid #e1e1e1;
+  }
+
+  ul {
+    @include vw(padding, 20px 45px 40px);
+
+    li {
+      color: #808080;
+      @include vw(margin-bottom, 55px);
+      line-height: 1.5;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        @include vw(width, 7px);
+        @include vw(height, 7px);
+        background-color: #808080;
+        border-radius: 50%;
+        @include vw(vertical-align, 12px);
+        @include vw(margin-right, 14px);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.apply_btn {
+  @include vw(margin-top, 30px);
+  @include vw(padding, 30px 0);
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  background-color: #5ddfdf;
+  @include vw(border-radius, 20px);
+}
+
+// 작은 안내문구
+.info {
+  @include vw(font-size, 28px);
+  line-height: 1.5;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    @include vw(width, 7px);
+    @include vw(height, 7px);
+    background-color: #000;
+    border-radius: 50%;
+    @include vw(vertical-align, 8px);
+    @include vw(margin-right, 7px);
+    @include vw(margin-left, 25px);
+  }
+}
+
+//common 끝
+
+// 가입신청 페이지
+.sector-info {
+  @include vw(padding, 70px 0);
+
+  em {
+    color: #d63a33;
+  }
+
+
+  span {
+    text-align: right;
+    display: block;
+  }
+
+  .product-info {
+    @include vw(margin-top, 20px);
+
+    form {
+      @include vw(margin, 40px 0);
+
+      select {
         background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
         @include vw(padding, 25px);
         @include vw(font-size, 25.67px);
@@ -95,211 +261,182 @@ form {
         appearance: none;
 
         &::-ms-expand {
-            display: none;
-            /*for IE10,11*/
+          display: none;
+          /*for IE10,11*/
         }
 
+      }
     }
-}
+  }
 
-.apply_btn {
-    @include vw(margin-top, 30px);
-    @include vw(padding, 30px 0);
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-weight: 900;
-    background-color: #5ddfdf;
-    @include vw(border-radius, 20px);
-}
+  .address {
+    .address-search {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
 
-// 가입신청 페이지
-.sector-info {
-    @include vw(padding, 70px 0);
+      input {
+        @include vw(width, 445px);
+        @include vw(margin-right, 35px);
+      }
 
-    em {
-        color: #d63a33;
+      button {
+        display: inline-block;
+        @include vw(font-size, 30px);
+        @include vw(height, 75px);
+        @include vw(width, 190px);
+        @include vw(padding, 20px 0);
+        @include vw(border-radius, 10px);
+        font-weight: 900;
+      }
     }
-
-
-    span {
-        text-align: right;
-        display: block;
-    }
-
-    .product-info {
-        @include vw(margin-top, 20px);
-
-        form {
-            @include vw(margin, 40px 0);
-
-            select {
-                background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
-                @include vw(padding, 25px);
-                @include vw(font-size, 25.67px);
-                display: block;
-                width: 100%;
-                @include vw(height, 105px);
-                box-sizing: border-box;
-                @include vw(border-radius, 20px);
-                border: 2px solid #e1e1e1;
-                @include vw(margin-bottom, 25px);
-                -webkit-appearance: none;
-                /* for chrome */
-                -moz-appearance: none;
-                /*for firefox*/
-                appearance: none;
-
-                &::-ms-expand {
-                    display: none;
-                    /*for IE10,11*/
-                }
-
-            }
-        }
-    }
-
-    .address {
-        .address-search {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            input {
-                @include vw(width, 445px);
-                @include vw(margin-right, 35px);
-            }
-
-            button {
-                display: inline-block;
-                @include vw(font-size, 30px);
-                @include vw(height, 75px);
-                @include vw(width, 190px);
-                @include vw(padding, 20px 0);
-                @include vw(border-radius, 10px);
-                font-weight: 900;
-            }
-        }
-    }
+  }
 }
 
 .sector-agree {
-    @include vw(padding-bottom, 115px);
+  @include vw(padding-bottom, 115px);
 
-    .wrap {
-        div {
-            background-color: #f8f8f8;
-            @include vw(border-radius, 20px);
+  .wrap {
+    div {
+      background-color: #f8f8f8;
+      @include vw(border-radius, 20px);
 
-            @include vw(margin-bottom, 26px);
+      @include vw(margin-bottom, 26px);
 
-            .title {
-                margin-top: 0;
-                @include vw(margin-bottom, 21px);
-            }
+      .title {
+        margin-top: 0;
+        @include vw(margin-bottom, 21px);
+      }
 
-            p {
-                color: #808080;
-                @include vw(margin-top, 21px);
+      p {
+        color: #808080;
+        @include vw(margin-top, 21px);
 
-                em {
-                    color: #4793a3;
-                    font-weight: 900;
-                }
-            }
+        em {
+          color: #4793a3;
+          font-weight: 900;
         }
+      }
+    }
+  }
+
+  .essential {
+    @include vw(padding, 30px 40px);
+
+    .title {
+
+      @include vw(vertical-align, 12px);
+      @include vw(margin-left, 10px);
     }
 
-    .essential {
-        @include vw(padding, 30px 40px);
+    [type="radio"] {
+      appearance: none;
+      @include vw(width, 53px);
+      @include vw(height, 53px);
+      background-image: url(/img/check_off.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: transparent;
 
-        .title {
-
-            @include vw(vertical-align, 12px);
-            @include vw(margin-left, 10px);
-        }
-
-        [type="radio"] {
-            appearance: none;
-            @include vw(width, 53px);
-            @include vw(height, 53px);
-            background-image: url(/img/check_off.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-color: transparent;
-
-            &:checked {
-                background-image: url(/img/check_on.png);
-            }
-        }
+      &:checked {
+        background-image: url(/img/check_on.png);
+      }
     }
+  }
 
-    .guide {
-        .title {
-            display: block;
-            @include vw(padding, 40px 40px 25px);
-            border-bottom: 2px solid #e1e1e1;
-        }
 
-        ul {
-            @include vw(padding, 20px 45px 40px);
-
-            li {
-                color: #808080;
-                @include vw(margin-bottom, 55px);
-                line-height: 1.5;
-
-                &:before {
-                    content: '';
-                    display: inline-block;
-                    @include vw(width, 7px);
-                    @include vw(height, 7px);
-                    background-color: #808080;
-                    border-radius: 50%;
-                    @include vw(vertical-align, 12px);
-                    @include vw(margin-right, 14px);
-                }
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-    }
 
 
 }
 
 //요금계산기 페이지
 .sector-select {
-    @include vw(padding-top, 70px);
-    ul {
-        @include vw(padding, 30px 0 65px);
-        li {
-            height: 76px;
-            box-sizing: border-box;
-            text-align: center;
-            display: inline-block;
-            width: 23%;
-            margin-right: 1%;
-            @include vw(font-size,28px);
-            @include vw(padding, 25px 0);
-            background-color: #f2f2f2;
-            color: #000;
-            font-weight: 900;
-            @include vw(border-radius, 10px);
+  @include vw(padding-top, 70px);
 
-            &:last-child {
-                margin-right: 0;
-            }
+  ul {
+    @include vw(padding, 30px 0 65px);
 
-            &.on {
-                background-color: #000;
-                color: #fff;
-            }
-        }
+    li {
+      @include vw(height, 76px);
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      width: 23%;
+      margin-right: 1%;
+      @include vw(font-size, 28px);
+      @include vw(padding, 25px 0);
+      background-color: #f2f2f2;
+      color: #000;
+      font-weight: 900;
+      @include vw(border-radius, 10px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.on {
+        background-color: #000;
+        color: #fff;
+      }
     }
+  }
+}
+
+.sector-table {
+  @include vw(padding-bottom, 140px);
+
+  .info {
+    @include vw(margin-bottom, 80px);
+  }
+
+  .apply_btn {
+    @include vw(width, 630px);
+    margin: 0 auto;
+  }
+}
+
+//사은품 이벤트
+.sector-price {
+  @include vw(padding-bottom, 90px);
+  .wrap {
+    @include vw(padding-top, 60px);
+
+    .title {
+      @include vw(margin-bottom, 35px);
+
+    }
+
+    .info {
+      @include vw(font-size, 25px);
+
+      &:before {
+        margin-left: 0;
+      }
+    }
+  }
+  table{
+    @include vw(padding-top, 30px);
+    tr{
+      th{
+        text-align: left;
+        @include vw(padding,25px);
+      }
+      &:first-child{
+        th{
+          @include vw(padding,40px 25px);
+          text-align: center;
+        }
+      }
+      td{
+        @include vw(padding,0 25px);
+      }
+    }
+  }
+  .apply_btn{
+    @include vw(margin-top, 40px);
+    @include vw(width, 630px);
+    margin: 0 auto;
+  }
 }

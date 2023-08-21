@@ -475,6 +475,136 @@ form select::-ms-expand {
   /*for IE10,11*/
 }
 
+.red {
+  color: #ee2e26;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 2.7777777778vw;
+}
+@media screen and (min-width: 720px) {
+  table {
+    margin-bottom: 20px;
+  }
+}
+table th {
+  background-color: #f8f8f8;
+}
+table th,
+table td {
+  border: 1px solid #e5e5e5;
+}
+table tr th {
+  width: 20%;
+  padding: 3.4722222222vw 0;
+}
+@media screen and (min-width: 720px) {
+  table tr th {
+    padding: 25px 0;
+  }
+}
+table tr:first-child {
+  border-top: 3px solid #666666;
+}
+table tr:first-child th {
+  padding: 5.5555555556vw 0;
+  font-weight: 900;
+}
+@media screen and (min-width: 720px) {
+  table tr:first-child th {
+    padding: 40px 0;
+  }
+}
+table td {
+  text-align: right;
+  color: #6d6e6f;
+  padding: 0 0.6944444444vw;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 720px) {
+  table td {
+    padding: 0 5px;
+  }
+}
+
+.guide {
+  background-color: #f8f8f8;
+  border-radius: 2.7777777778vw;
+  margin-bottom: 3.6111111111vw;
+}
+@media screen and (min-width: 720px) {
+  .guide {
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .guide {
+    margin-bottom: 26px;
+  }
+}
+.guide .title {
+  display: block;
+  padding: 5.5555555556vw 5.5555555556vw 3.4722222222vw;
+  border-bottom: 2px solid #e1e1e1;
+}
+@media screen and (min-width: 720px) {
+  .guide .title {
+    padding: 40px 40px 25px;
+  }
+}
+.guide ul {
+  padding: 2.7777777778vw 6.25vw 5.5555555556vw;
+}
+@media screen and (min-width: 720px) {
+  .guide ul {
+    padding: 20px 45px 40px;
+  }
+}
+.guide ul li {
+  color: #808080;
+  margin-bottom: 7.6388888889vw;
+  line-height: 1.5;
+}
+@media screen and (min-width: 720px) {
+  .guide ul li {
+    margin-bottom: 55px;
+  }
+}
+.guide ul li:before {
+  content: "";
+  display: inline-block;
+  width: 0.9722222222vw;
+  height: 0.9722222222vw;
+  background-color: #808080;
+  border-radius: 50%;
+  vertical-align: 1.6666666667vw;
+  margin-right: 1.9444444444vw;
+}
+@media screen and (min-width: 720px) {
+  .guide ul li:before {
+    width: 7px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .guide ul li:before {
+    height: 7px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .guide ul li:before {
+    vertical-align: 12px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .guide ul li:before {
+    margin-right: 14px;
+  }
+}
+.guide ul li:last-child {
+  margin-bottom: 0;
+}
+
 .apply_btn {
   margin-top: 4.1666666667vw;
   padding: 4.1666666667vw 0;
@@ -498,6 +628,52 @@ form select::-ms-expand {
 @media screen and (min-width: 720px) {
   .apply_btn {
     border-radius: 20px;
+  }
+}
+
+.info {
+  font-size: 3.8888888889vw;
+  line-height: 1.5;
+}
+@media screen and (min-width: 720px) {
+  .info {
+    font-size: 28px;
+  }
+}
+.info:before {
+  content: "";
+  display: inline-block;
+  width: 0.9722222222vw;
+  height: 0.9722222222vw;
+  background-color: #000;
+  border-radius: 50%;
+  vertical-align: 1.1111111111vw;
+  margin-right: 0.9722222222vw;
+  margin-left: 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .info:before {
+    width: 7px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .info:before {
+    height: 7px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .info:before {
+    vertical-align: 8px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .info:before {
+    margin-right: 7px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .info:before {
+    margin-left: 25px;
   }
 }
 
@@ -725,67 +901,6 @@ form select::-ms-expand {
 .sector-agree .essential [type=radio]:checked {
   background-image: url(/img/check_on.png);
 }
-.sector-agree .guide .title {
-  display: block;
-  padding: 5.5555555556vw 5.5555555556vw 3.4722222222vw;
-  border-bottom: 2px solid #e1e1e1;
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide .title {
-    padding: 40px 40px 25px;
-  }
-}
-.sector-agree .guide ul {
-  padding: 2.7777777778vw 6.25vw 5.5555555556vw;
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul {
-    padding: 20px 45px 40px;
-  }
-}
-.sector-agree .guide ul li {
-  color: #808080;
-  margin-bottom: 7.6388888889vw;
-  line-height: 1.5;
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul li {
-    margin-bottom: 55px;
-  }
-}
-.sector-agree .guide ul li:before {
-  content: "";
-  display: inline-block;
-  width: 0.9722222222vw;
-  height: 0.9722222222vw;
-  background-color: #808080;
-  border-radius: 50%;
-  vertical-align: 1.6666666667vw;
-  margin-right: 1.9444444444vw;
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul li:before {
-    width: 7px;
-  }
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul li:before {
-    height: 7px;
-  }
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul li:before {
-    vertical-align: 12px;
-  }
-}
-@media screen and (min-width: 720px) {
-  .sector-agree .guide ul li:before {
-    margin-right: 14px;
-  }
-}
-.sector-agree .guide ul li:last-child {
-  margin-bottom: 0;
-}
 
 .sector-select {
   padding-top: 9.7222222222vw;
@@ -804,7 +919,7 @@ form select::-ms-expand {
   }
 }
 .sector-select ul li {
-  height: 76px;
+  height: 10.5555555556vw;
   box-sizing: border-box;
   text-align: center;
   display: inline-block;
@@ -816,6 +931,11 @@ form select::-ms-expand {
   color: #000;
   font-weight: 900;
   border-radius: 1.3888888889vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-select ul li {
+    height: 76px;
+  }
 }
 @media screen and (min-width: 720px) {
   .sector-select ul li {
@@ -838,4 +958,115 @@ form select::-ms-expand {
 .sector-select ul li.on {
   background-color: #000;
   color: #fff;
+}
+
+.sector-table {
+  padding-bottom: 19.4444444444vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-table {
+    padding-bottom: 140px;
+  }
+}
+.sector-table .info {
+  margin-bottom: 11.1111111111vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-table .info {
+    margin-bottom: 80px;
+  }
+}
+.sector-table .apply_btn {
+  width: 87.5vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 720px) {
+  .sector-table .apply_btn {
+    width: 630px;
+  }
+}
+
+.sector-price {
+  padding-bottom: 12.5vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price {
+    padding-bottom: 90px;
+  }
+}
+.sector-price .wrap {
+  padding-top: 8.3333333333vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price .wrap {
+    padding-top: 60px;
+  }
+}
+.sector-price .wrap .title {
+  margin-bottom: 4.8611111111vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price .wrap .title {
+    margin-bottom: 35px;
+  }
+}
+.sector-price .wrap .info {
+  font-size: 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price .wrap .info {
+    font-size: 25px;
+  }
+}
+.sector-price .wrap .info:before {
+  margin-left: 0;
+}
+.sector-price table {
+  padding-top: 4.1666666667vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price table {
+    padding-top: 30px;
+  }
+}
+.sector-price table tr th {
+  text-align: left;
+  padding: 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price table tr th {
+    padding: 25px;
+  }
+}
+.sector-price table tr:first-child th {
+  padding: 5.5555555556vw 3.4722222222vw;
+  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .sector-price table tr:first-child th {
+    padding: 40px 25px;
+  }
+}
+.sector-price table tr td {
+  padding: 0 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price table tr td {
+    padding: 0 25px;
+  }
+}
+.sector-price .apply_btn {
+  margin-top: 5.5555555556vw;
+  width: 87.5vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 720px) {
+  .sector-price .apply_btn {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-price .apply_btn {
+    width: 630px;
+  }
 }/*# sourceMappingURL=style.css.map */
