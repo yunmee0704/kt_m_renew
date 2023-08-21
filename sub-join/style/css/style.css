@@ -688,6 +688,34 @@ table td {
 .sector-info em {
   color: #d63a33;
 }
+.sector-info input {
+  width: 83.3333333333vw;
+  border: none;
+  border-bottom: 2px solid #e1e1e1;
+  padding: 3.4722222222vw 2.0833333333vw;
+  font-size: 4.2597222222vw;
+  margin: 4.8611111111vw 0;
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    padding: 25px 15px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    font-size: 30.67px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .sector-info input {
+    margin: 35px 0;
+  }
+}
 .sector-info span {
   text-align: right;
   display: block;

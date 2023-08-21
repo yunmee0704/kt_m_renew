@@ -230,7 +230,15 @@ table {
   em {
     color: #d63a33;
   }
+  input{
+    @include vw(width, 600px);
+    border:none;
+    border-bottom: 2px solid #e1e1e1;
+    @include vw(padding, 25px 15px);
+    @include vw(font-size, 30.67px);
+    @include vw(margin, 35px 0);
 
+}
 
   span {
     text-align: right;
