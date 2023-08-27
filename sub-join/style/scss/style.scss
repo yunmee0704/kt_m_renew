@@ -221,6 +221,47 @@ table {
   }
 }
 
+.banner {
+  @include vw(padding, 40px 35px);
+  box-sizing: border-box;
+  @include vw(height, 265px);
+  @include vw(border-radius, 20px);
+  @include vw(margin-bottom, 33px);
+
+  .main-title {
+    @include vw(font-size, 40px);
+    @include vw(letter-spacing, -2px);
+    font-weight: 900;
+    line-height: 1.2;
+
+  }
+
+  .sub-title {
+    @include vw(font-size, 25.33px);
+    font-weight: 400;
+    @include vw(letter-spacing, -1.5px);
+    @include vw(margin-top, 25px);
+    line-height: 1.2;
+
+    &.gray {
+      color: #7f7f7f;
+    }
+
+    &.dark-gray {
+      color: #525252;
+    }
+  }
+
+  &.bg_img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-image: url('/img/banner_1.png');
+
+  }
+}
+
 //common 끝
 
 // 가입신청 페이지
@@ -230,15 +271,16 @@ table {
   em {
     color: #d63a33;
   }
-  input{
+
+  input {
     @include vw(width, 600px);
-    border:none;
+    border: none;
     border-bottom: 2px solid #e1e1e1;
     @include vw(padding, 25px 15px);
     @include vw(font-size, 30.67px);
     @include vw(margin, 35px 0);
 
-}
+  }
 
   span {
     text-align: right;
@@ -408,6 +450,7 @@ table {
 //사은품 이벤트
 .sector-price {
   @include vw(padding-bottom, 90px);
+
   .wrap {
     @include vw(padding-top, 60px);
 
@@ -424,25 +467,30 @@ table {
       }
     }
   }
-  table{
+
+  table {
     @include vw(padding-top, 30px);
-    tr{
-      th{
+
+    tr {
+      th {
         text-align: left;
-        @include vw(padding,25px);
+        @include vw(padding, 25px);
       }
-      &:first-child{
-        th{
-          @include vw(padding,40px 25px);
+
+      &:first-child {
+        th {
+          @include vw(padding, 40px 25px);
           text-align: center;
         }
       }
-      td{
-        @include vw(padding,0 25px);
+
+      td {
+        @include vw(padding, 0 25px);
       }
     }
   }
-  .apply_btn{
+
+  .apply_btn {
     @include vw(margin-top, 40px);
     @include vw(width, 630px);
     margin: 0 auto;
