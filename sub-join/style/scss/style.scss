@@ -498,15 +498,10 @@ table {
 }
 //인터넷 상품페이지
 .sector-price{
-  .wrap{
-    &:last-child{
-      padding-top: 0;
-    }
-  }
   &.internet{
     table {
-
       tr{
+      
         &:first-child{
           th{
             @include vw(padding, 40px 0px);
@@ -514,12 +509,82 @@ table {
         }
         th{
           text-align: center;
-          width: auto;
-          @include vw(padding, 10px 0px);
+          line-height: 1.2;
+          @include vw(padding, 10px);
+          &.normal{
+            font-weight: 400;
+          }
           
         }
+
         
+      }
+      th,td{
+        width:initial;
+        vertical-align: middle;
+      }
+    }
+    .internet, .wifi{
+      tr{
+        @include vw(font-size,25px);
+        &:first-child{
+          th{@include vw(font-size,30.67px);}
+        }
+      }
+    }
+    .setting,.return{
+      tr{
+        &:first-child{
+          th{ @include vw(padding, 10px);}
+        }
+      }
+     th, td{
+       text-align: left;
+       vertical-align: middle;
+      }
+      td{
+        @include vw(padding,10px);
+      }
+      
+      th{font-weight: 900; @include vw(padding, 10px);}
+    }
+    .setting{
+      th{
+        font-weight: 400;
+      }
+    }
+    .office, .company ,.return_percent {
+     th, td{
+       text-align: center;
+      }
+      td{
+        @include vw(padding,10px);
+      }
+    }
+    .return_percent,.return{
+      th{font-weight: 900;}
+      table{
+        @include vw(margin-top, 35px);
+      }
+    }
+    .banner{
+      .white {
+        color: #fff;
+      }
+      @include vw(margin-top, 50px);
+      &.first {
+        background-image: url('/img/banner_6.png');
+      }
+      &.second {
+        background-image: url('/img/banner_7.png');
+      }
+      &.third {
+        background-image: url('/img/banner_4.png');
+        .big{
+          @include vw(font-size,66.67px);
+        }
       }
     }
   }
+
 }

@@ -1177,9 +1177,6 @@ table td {
   }
 }
 
-.sector-price .wrap:last-child {
-  padding-top: 0;
-}
 .sector-price.internet table tr:first-child th {
   padding: 5.5555555556vw 0vw;
 }
@@ -1190,11 +1187,116 @@ table td {
 }
 .sector-price.internet table tr th {
   text-align: center;
-  width: auto;
-  padding: 1.3888888889vw 0vw;
+  line-height: 1.2;
+  padding: 1.3888888889vw;
 }
 @media screen and (min-width: 720px) {
   .sector-price.internet table tr th {
-    padding: 10px 0px;
+    padding: 10px;
+  }
+}
+.sector-price.internet table tr th.normal {
+  font-weight: 400;
+}
+.sector-price.internet table th, .sector-price.internet table td {
+  width: initial;
+  vertical-align: middle;
+}
+.sector-price.internet .internet tr, .sector-price.internet .wifi tr {
+  font-size: 3.4722222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .internet tr, .sector-price.internet .wifi tr {
+    font-size: 25px;
+  }
+}
+.sector-price.internet .internet tr:first-child th, .sector-price.internet .wifi tr:first-child th {
+  font-size: 4.2597222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .internet tr:first-child th, .sector-price.internet .wifi tr:first-child th {
+    font-size: 30.67px;
+  }
+}
+.sector-price.internet .setting tr:first-child th, .sector-price.internet .return tr:first-child th {
+  padding: 1.3888888889vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .setting tr:first-child th, .sector-price.internet .return tr:first-child th {
+    padding: 10px;
+  }
+}
+.sector-price.internet .setting th, .sector-price.internet .setting td, .sector-price.internet .return th, .sector-price.internet .return td {
+  text-align: left;
+  vertical-align: middle;
+}
+.sector-price.internet .setting td, .sector-price.internet .return td {
+  padding: 1.3888888889vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .setting td, .sector-price.internet .return td {
+    padding: 10px;
+  }
+}
+.sector-price.internet .setting th, .sector-price.internet .return th {
+  font-weight: 900;
+  padding: 1.3888888889vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .setting th, .sector-price.internet .return th {
+    padding: 10px;
+  }
+}
+.sector-price.internet .setting th {
+  font-weight: 400;
+}
+.sector-price.internet .office th, .sector-price.internet .office td, .sector-price.internet .company th, .sector-price.internet .company td, .sector-price.internet .return_percent th, .sector-price.internet .return_percent td {
+  text-align: center;
+}
+.sector-price.internet .office td, .sector-price.internet .company td, .sector-price.internet .return_percent td {
+  padding: 1.3888888889vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .office td, .sector-price.internet .company td, .sector-price.internet .return_percent td {
+    padding: 10px;
+  }
+}
+.sector-price.internet .return_percent th, .sector-price.internet .return th {
+  font-weight: 900;
+}
+.sector-price.internet .return_percent table, .sector-price.internet .return table {
+  margin-top: 4.8611111111vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .return_percent table, .sector-price.internet .return table {
+    margin-top: 35px;
+  }
+}
+.sector-price.internet .banner {
+  margin-top: 6.9444444444vw;
+}
+.sector-price.internet .banner .white {
+  color: #fff;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .banner {
+    margin-top: 50px;
+  }
+}
+.sector-price.internet .banner.first {
+  background-image: url("/img/banner_6.png");
+}
+.sector-price.internet .banner.second {
+  background-image: url("/img/banner_7.png");
+}
+.sector-price.internet .banner.third {
+  background-image: url("/img/banner_4.png");
+}
+.sector-price.internet .banner.third .big {
+  font-size: 9.2597222222vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet .banner.third .big {
+    font-size: 66.67px;
   }
 }/*# sourceMappingURL=style.css.map */
