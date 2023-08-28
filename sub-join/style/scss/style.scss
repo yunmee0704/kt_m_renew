@@ -496,3 +496,30 @@ table {
     margin: 0 auto;
   }
 }
+//인터넷 상품페이지
+.sector-price{
+  .wrap{
+    &:last-child{
+      padding-top: 0;
+    }
+  }
+  &.internet{
+    table {
+
+      tr{
+        &:first-child{
+          th{
+            @include vw(padding, 40px 0px);
+          }
+        }
+        th{
+          text-align: center;
+          width: auto;
+          @include vw(padding, 10px 0px);
+          
+        }
+        
+      }
+    }
+  }
+}

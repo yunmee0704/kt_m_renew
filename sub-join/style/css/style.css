@@ -1175,4 +1175,26 @@ table td {
   .sector-price .apply_btn {
     width: 630px;
   }
+}
+
+.sector-price .wrap:last-child {
+  padding-top: 0;
+}
+.sector-price.internet table tr:first-child th {
+  padding: 5.5555555556vw 0vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet table tr:first-child th {
+    padding: 40px 0px;
+  }
+}
+.sector-price.internet table tr th {
+  text-align: center;
+  width: auto;
+  padding: 1.3888888889vw 0vw;
+}
+@media screen and (min-width: 720px) {
+  .sector-price.internet table tr th {
+    padding: 10px 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
