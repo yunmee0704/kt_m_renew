@@ -474,19 +474,11 @@ footer .botton-banner span strong {
 }
 .sector-tab .tab-list li img {
   width: 100%;
-  margin-bottom: 3.4722222222vw;
+  box-sizing: border-box;
+  padding: 3.1944444444vw 3.4722222222vw;
 }
 @media screen and (min-width: 720px) {
   .sector-tab .tab-list li img {
-    margin-bottom: 25px;
-  }
-}
-.sector-tab .tab-list li a {
-  padding: 3.1944444444vw 3.4722222222vw;
-  box-sizing: border-box;
-}
-@media screen and (min-width: 720px) {
-  .sector-tab .tab-list li a {
     padding: 23px 25px;
   }
 }
@@ -502,18 +494,19 @@ footer .botton-banner span strong {
 .sector-tab .tab-list li.on {
   background-color: #fff;
   border-bottom: none;
-}
-.sector-tab .tab-list li.on a {
   border-top: 2px solid #5be0df;
   border-width: 0.2777777778vw;
 }
 @media screen and (min-width: 720px) {
-  .sector-tab .tab-list li.on a {
+  .sector-tab .tab-list li.on {
     border-width: 2px;
   }
 }
 .sector-tab .tab-conts {
   padding: 35px 0;
+}
+.sector-tab .tab-conts .product {
+  display: none;
 }
 .sector-tab .tab-conts .product .contents {
   height: 63.8888888889vw;
@@ -664,7 +657,8 @@ footer .botton-banner span strong {
     padding-top: 17px;
   }
 }
-.sector-tab .tab-conts .product .bottom-area button {
+.sector-tab .tab-conts .product .bottom-area a {
+  text-align: center;
   font-size: 4.4444444444vw;
   letter-spacing: -0.2777777778vw;
   font-weight: 900;
@@ -673,33 +667,36 @@ footer .botton-banner span strong {
   box-sizing: border-box;
 }
 @media screen and (min-width: 720px) {
-  .sector-tab .tab-conts .product .bottom-area button {
+  .sector-tab .tab-conts .product .bottom-area a {
     font-size: 32px;
   }
 }
 @media screen and (min-width: 720px) {
-  .sector-tab .tab-conts .product .bottom-area button {
+  .sector-tab .tab-conts .product .bottom-area a {
     letter-spacing: -2px;
   }
 }
 @media screen and (min-width: 720px) {
-  .sector-tab .tab-conts .product .bottom-area button {
+  .sector-tab .tab-conts .product .bottom-area a {
     padding: 17px 0;
   }
 }
 @media screen and (min-width: 720px) {
-  .sector-tab .tab-conts .product .bottom-area button {
+  .sector-tab .tab-conts .product .bottom-area a {
     border-radius: 10px;
   }
 }
-.sector-tab .tab-conts .product .bottom-area button.cal {
+.sector-tab .tab-conts .product .bottom-area a.cal {
   width: 35%;
   margin-right: 4%;
   background-color: #ededed;
 }
-.sector-tab .tab-conts .product .bottom-area button.apply {
+.sector-tab .tab-conts .product .bottom-area a.apply {
   width: 61%;
   background-color: #5ddfdf;
+}
+.sector-tab .tab-conts .product.on {
+  display: block;
 }
 
 .sector-banner {

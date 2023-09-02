@@ -80,7 +80,7 @@
 		border-top: 2px solid #e1e1e1;
 		@include vw(border-width, 2px);
 
-		li {
+		li {				
 			border-right: 2px solid #e1e1e1;
 			border-bottom: 2px solid #e1e1e1;
 			@include vw(border-width, 2px);
@@ -96,12 +96,8 @@
 
 			img {
 				width: 100%;
-				@include vw(margin-bottom, 25px);
-			}
-
-			a {
-				@include vw(padding, 23px 25px);
 				box-sizing: border-box;
+				@include vw(padding, 23px 25px);
 			}
 
 			&:first-child {
@@ -112,11 +108,8 @@
 			&.on {
 				background-color: #fff;
 				border-bottom: none;
-
-				a {
-					border-top: 2px solid #5be0df;
+				border-top: 2px solid #5be0df;
 					@include vw(border-width, 2px);
-				}
 
 			}
 		}
@@ -125,6 +118,7 @@
 	.tab-conts {
 		padding: 35px 0;
 		.product {
+			display: none;
 			.contents {
 				@include vw(height, 460px);
 				box-sizing: border-box;
@@ -204,7 +198,8 @@
 			.bottom-area {
 				@include vw(padding-top, 17px);
 				display:flex;
-				button {
+				a {
+					text-align: center;
 					@include vw(font-size, 32px);
 					@include vw(letter-spacing, -2px);
 					font-weight: 900;
@@ -223,6 +218,9 @@
 						background-color: #5ddfdf;
 					}
 				}
+			}
+			&.on{
+				display: block;
 			}
 		}
 	}
