@@ -219,6 +219,11 @@ table {
     @include vw(margin-right, 7px);
     @include vw(margin-left, 25px);
   }
+  &.no-dot{
+    &:before{
+      display: none;
+    }
+  }
 }
 
 .banner {
@@ -259,7 +264,21 @@ table {
 
     background-image: url('/img/banner_1.png');
 
+    &.third {
+      background-image: url('/img/banner_4.png');
+
+      .big {
+        @include vw(font-size, 66.67px);
+      }
+    }
+
   }
+}
+
+.center {
+
+  text-align: center !important;
+
 }
 
 //common 끝
@@ -496,95 +515,312 @@ table {
     margin: 0 auto;
   }
 }
+
 //인터넷 상품페이지
-.sector-price{
-  &.internet{
+.sector-price {
+  &.internet {
     table {
-      tr{
-      
-        &:first-child{
-          th{
+      tr {
+
+        &:first-child {
+          th {
             @include vw(padding, 40px 0px);
           }
         }
-        th{
+
+        th {
           text-align: center;
           line-height: 1.2;
           @include vw(padding, 10px);
-          &.normal{
+
+          &.normal {
             font-weight: 400;
           }
-          
+
         }
 
-        
+
       }
-      th,td{
-        width:initial;
+
+      th,
+      td {
+        width: initial;
         vertical-align: middle;
       }
     }
-    .internet, .wifi{
-      tr{
-        @include vw(font-size,25px);
-        &:first-child{
-          th{@include vw(font-size,30.67px);}
+
+    .internet,
+    .wifi {
+      tr {
+        @include vw(font-size, 25px);
+
+        &:first-child {
+          th {
+            @include vw(font-size, 30.67px);
+          }
         }
       }
     }
-    .setting,.return{
-      tr{
-        &:first-child{
-          th{ @include vw(padding, 10px);}
+
+    .setting,
+    .return {
+      tr {
+        &:first-child {
+          th {
+            @include vw(padding, 10px);
+          }
         }
       }
-     th, td{
-       text-align: left;
-       vertical-align: middle;
+
+      th,
+      td {
+        text-align: left;
+        vertical-align: middle;
       }
-      td{
-        @include vw(padding,10px);
+
+      td {
+        @include vw(padding, 10px);
       }
-      
-      th{font-weight: 900; @include vw(padding, 10px);}
+
+      th {
+        font-weight: 900;
+        @include vw(padding, 10px);
+      }
     }
-    .setting{
-      th{
+
+    .setting {
+      th {
         font-weight: 400;
       }
     }
-    .office, .company ,.return_percent {
-     th, td{
-       text-align: center;
+
+    .office,
+    .company,
+    .return_percent {
+
+      th,
+      td {
+        text-align: center;
       }
-      td{
-        @include vw(padding,10px);
+
+      td {
+        @include vw(padding, 10px);
       }
     }
-    .return_percent,.return{
-      th{font-weight: 900;}
-      table{
+
+    .return_percent,
+    .return {
+      th {
+        font-weight: 900;
+      }
+
+      table {
         @include vw(margin-top, 35px);
       }
     }
-    .banner{
+
+    .banner {
       .white {
         color: #fff;
       }
+
       @include vw(margin-top, 50px);
+
       &.first {
         background-image: url('/img/banner_6.png');
       }
+
       &.second {
         background-image: url('/img/banner_7.png');
       }
+
       &.third {
         background-image: url('/img/banner_4.png');
-        .big{
-          @include vw(font-size,66.67px);
+
+        .big {
+          @include vw(font-size, 66.67px);
         }
       }
     }
   }
 
+}
+
+//cctv 상품페이지
+.sector-price {
+  &.cctv {
+    .wrap {
+      table{
+        margin-bottom: 0;
+      }
+      thead {
+
+        th {
+          text-align: center;
+          @include vw(padding, 25px 0);
+          line-height: 1.5;
+        }
+
+      }
+
+      tbody {
+        tr{
+          &:first-child{
+            border-top: 1px solid #f8f8f8;
+          }
+        }
+        th {
+          border-top: 1px solid #f8f8f8;
+          text-align: left;
+
+          &:first-child {
+            font-weight: 400;
+          }
+
+        }
+        td{
+          position: relative;
+          &:before{
+            content: '';
+            display: inline-block;
+            @include vw(width,40px);
+            @include vw(height,40px);
+            border-radius: 50%;
+            background-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          &.blue{
+            &:before{
+              background-color: #4691f3;
+            }
+          }
+          &.green{
+            &:before{
+              background-color: #3f917b;
+            }
+          }
+          &.red{
+            &:before{
+              background-color: #ff5959;
+            }
+          }
+          &.black{
+            &:before{
+              background-color: #000;
+            }
+          }
+        }
+      }
+      &.extra{
+        .point{
+          text-align: center;
+          @include vw(padding-top, 75px);
+          @include vw(border-radius, 20px);
+          @include vw(margin-bottom, 90px);
+          background-color: #f7f7f7;
+          .text{
+            p{
+              @include vw(font-size, 23px);
+              @include vw(margin-top, 7px);
+              line-height: 1.2;           
+            }
+            .bold{
+              font-weight: 900;
+              @include vw(font-size, 34px);
+              line-height: 1.2;
+            }
+            .highlight{
+              display: inline-block;
+              position: relative;
+              z-index: 2;
+              &:before{
+                content: '';
+                display: inline-block;
+                @include vw(height,25px);
+                width: 100%;
+                background-color: #baeeea;
+                position: absolute;
+                @include vw(bottom, -5px);
+                left: 0;
+                z-index: -1;
+              }
+            }
+          }
+          .bottom-text{
+            @include vw(border-bottom-left-radius,20px);
+            @include vw(border-bottom-right-radius,20px);          
+            background-color: #f2f2f2;
+            @include vw(padding,10px 0);
+            box-sizing: border-box;
+            .info{
+              @include vw(font-size, 20px);
+              &:before{
+                vertical-align: 4px;
+              }
+            }
+
+          }
+        }
+      }
+      &.pros{
+        .pros-box{
+          text-align: center;
+          @include vw(border-radius, 20px);
+          @include vw(margin-bottom, 90px);
+          background-color: #f7f7f7;
+         .title{
+          @include vw(border-top-left-radius,20px);
+            @include vw(border-top-right-radius,20px);
+            font-weight: 400;
+            @include vw(padding, 15px 0);
+            @include vw(font-size, 28px);
+            color:#fff;
+            margin-bottom: 0;
+         }
+       .contents{
+        >div{
+          @include vw(padding, 35px 0);
+          border-bottom:1px solid #e6e6e6;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+        font-weight: 700;
+        .color-title{
+          @include vw(font-size, 32px);
+          @include vw(margin-bottom, 20px);
+         }
+         .text{
+          @include vw(font-size, 26px);
+          color:#000;
+         }
+       }
+         &.blue{
+          .title{
+            background-color: #4691f3;
+          }
+          .color-title{
+            color: #4691f3;
+          }
+         }
+         &.red{
+          .title{
+            background-color: #ee2e26;
+          }
+          .color-title{
+            color: #ee2e26;
+          }
+         }
+         &.black{
+          .title{
+            background-color: #4d4d4d;
+          }
+         }
+        }
+      }
+    }
+  }
 }
