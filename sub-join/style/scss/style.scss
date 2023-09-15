@@ -403,14 +403,14 @@ table {
       appearance: none;
       @include vw(width, 53px);
       @include vw(height, 53px);
-      background-image: url(/img/check_off.png);
+      background-image: url('./');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-color: transparent;
 
       &:checked {
-        background-image: url(/img/check_on.png);
+        background-image: url(/kt_renewal/img/check_on.png);
       }
     }
   }
