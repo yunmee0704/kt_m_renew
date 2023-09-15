@@ -18,7 +18,7 @@
 
 * {
   @include vw(font-size, 30.67px);
-
+  font-family: 'NotoSansKR';
   p,
   span {
     @include vw(letter-spacing, -2px);
@@ -79,8 +79,8 @@
 form {
   @include vw(margin, 40px 0);
 
-  select {
-    background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
+  select,textarea {
+    background: url('//1gb.co.kr/ktmobile/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
     @include vw(padding, 25px);
     @include vw(font-size, 25.67px);
     display: block;
@@ -101,6 +101,13 @@ form {
       /*for IE10,11*/
     }
 
+  }
+}
+textarea{
+  background: none !important;
+  resize: none;
+  .scroll::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -284,14 +291,14 @@ table {
 //common 끝
 
 // 가입신청 페이지
-.sector-info {
+.sector-info,.sector-consult {
   @include vw(padding, 70px 0);
 
   em {
     color: #d63a33;
   }
 
-  input {
+  input{
     @include vw(width, 600px);
     border: none;
     border-bottom: 2px solid #e1e1e1;
@@ -309,33 +316,7 @@ table {
   .product-info {
     @include vw(margin-top, 20px);
 
-    form {
-      @include vw(margin, 40px 0);
 
-      select {
-        background: url('/img/gray_arrow.png') no-repeat 97% 50%/15px auto;
-        @include vw(padding, 25px);
-        @include vw(font-size, 25.67px);
-        display: block;
-        width: 100%;
-        @include vw(height, 105px);
-        box-sizing: border-box;
-        @include vw(border-radius, 20px);
-        border: 2px solid #e1e1e1;
-        @include vw(margin-bottom, 25px);
-        -webkit-appearance: none;
-        /* for chrome */
-        -moz-appearance: none;
-        /*for firefox*/
-        appearance: none;
-
-        &::-ms-expand {
-          display: none;
-          /*for IE10,11*/
-        }
-
-      }
-    }
   }
 
   .address {
@@ -403,7 +384,7 @@ table {
       appearance: none;
       @include vw(width, 53px);
       @include vw(height, 53px);
-      background-image: url('./');
+      background-image: url(/kt_renewal/img/check_off.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -820,6 +801,19 @@ table {
           }
          }
         }
+      }
+    }
+  }
+}
+.sector-consult{
+  .customer-name{
+    @include vw(margin-top, 35px);
+  }
+  .consult{
+    textarea{
+      @include vw(height, 93px);
+      &:last-child{
+        @include vw(height, 300px);
       }
     }
   }
