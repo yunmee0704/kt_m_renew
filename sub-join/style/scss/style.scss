@@ -38,7 +38,7 @@
     border-top: 2px solid #e1e1e1;
     border-bottom: 2px solid #e1e1e1;
     @include vw(height, 117px);
-    @include vw(padding, 40px 44px);
+    @include vw(padding, 40px 0);
     box-sizing: border-box;
 
     a {
@@ -115,7 +115,27 @@ textarea{
 .red {
   color: #ee2e26;
 }
+.gray {
+  color: #7f7f7f;
+}
 
+.dark-gray {
+  color: #525252;
+}
+
+//점
+.dots{
+  &:before {
+    content: '';
+    display: inline-block;
+    @include vw(width, 7px);
+    @include vw(height, 7px);
+    background-color: #808080;
+    border-radius: 50%;
+    @include vw(vertical-align, 12px);
+    @include vw(margin-right, 14px);
+  }
+}
 
 // 표
 table {
@@ -255,13 +275,7 @@ table {
     @include vw(margin-top, 25px);
     line-height: 1.2;
 
-    &.gray {
-      color: #7f7f7f;
-    }
-
-    &.dark-gray {
-      color: #525252;
-    }
+ 
   }
 
   &.bg_img {
@@ -815,6 +829,81 @@ table {
       &:last-child{
         @include vw(height, 300px);
       }
+    }
+  }
+}
+
+//제휴카드 할인
+.sector-card{
+  @include vw(margin-bottom, 60px);
+  .title{
+    @include vw(padding, 75px 0 20px);
+  }
+  .card-box{
+    @include vw(padding,50px 0px);
+    border-top:4px solid #e2e2e2;  
+    @include vw(border-width, 4px);
+    .top{
+      display: flex;
+      justify-content: space-between;
+      @include vw(margin-bottom, 40px);   
+      .left{
+        img{
+          @include vw(width, 245px);
+        }
+      }
+      .right{
+        @include vw(letter-spacing, -2.5px);
+        @include vw(margin-left,20px);
+        .flag{
+          @include vw(width, 105px);
+          @include vw(padding, 5px 15px);
+          box-sizing: border-box;
+          background-color: #7361c5;
+          color:#fff;
+          @include vw(border-radius, 10px);
+          @include vw(font-size,22.67px);
+        }
+        .title{
+          padding: 0;
+          @include vw(margin, 13px 0 20px);
+          @include vw(font-size,30.66px);
+        }
+        p{
+          display: block;
+          @include vw(font-size,27px);
+      
+        &.dots{        
+          @include vw(margin-bottom, 35px);          
+          &:before{
+            background-color: #000;
+            @include vw(margin-right,0);
+          }
+        }
+        .gray{
+          display: block;
+          @include vw(margin-top, 15px);
+          @include vw(font-size,24px);
+        }
+        }
+      }
+    }
+    .bottom{
+      p{
+        text-align: center;
+        @include vw(font-size,27px);
+      }
+      .apply_btn{
+        margin: 0 auto;
+        @include vw(width, 215px);
+        @include vw(border-radius, 50px);
+        @include vw(padding, 15px 0);
+        @include vw(font-size,24px);
+        @include vw(margin-top, 40px);  
+      }
+    }
+    &:last-child{
+      border-bottom:4px solid #e2e2e2;
     }
   }
 }
